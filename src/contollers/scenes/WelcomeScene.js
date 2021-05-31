@@ -6,5 +6,7 @@ module.exports = () => {
 
   welcomeScene.enter((ctx) => sceneServices.enter(ctx))
 
+  welcomeScene.on('callback_query', (ctx) => sceneServices.actions(ctx))
+
   return welcomeScene
 }

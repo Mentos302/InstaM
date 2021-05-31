@@ -14,6 +14,8 @@ const userScheme = mongoose.Schema(
       type: String,
       required: true,
     },
+    last_activity: { type: String },
+    instagram_id: { type: String },
   },
   { versionKey: false }
 )

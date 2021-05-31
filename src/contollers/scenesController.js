@@ -4,8 +4,9 @@ module.exports = (bot) => {
   const updateHandler = require('../services/updateHandler')
 
   const WelcomeScene = require('./scenes/WelcomeScene')()
+  const InstagramScene = require('./scenes/InstagramScene')()
 
-  const stage = new Stage([WelcomeScene], {
+  const stage = new Stage([WelcomeScene, InstagramScene], {
     ttl: 999,
   })
 
